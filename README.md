@@ -1,2 +1,2 @@
 # crischutu07.github.io
-this page in WIP
+làm page cho mấy ông mới dùng omlet acrade mcpe xd
