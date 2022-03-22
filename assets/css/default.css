@@ -1,0 +1,15 @@
+body {
+ background-color: #323438;
+}
+#crafting_table {
+      position: static;
+      top: 0px;
+      right: 0px;
+  }
+.test {
+  color: rgb(255, 255, 255);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+#crischutu07 {
+  float: left;
+}
