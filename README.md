@@ -1,2 +1,2 @@
-# crischutu07.xyz
+# crischutu07.github.io
 hello :3
