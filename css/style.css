@@ -5,6 +5,7 @@ html {
   font-family: "JetBrains Mono", "monospace";
   margin: 0;
 }
+
 #box {
   color: white;
   border-style: solid;
@@ -24,20 +25,69 @@ html {
   height: 96%;
   padding: 10px;
   flex-direction: column;
+  position: relative;
 }
+
 #info-header {
   max-width: 1000px;
+  position: relative;
 }
-#info-name {
-  font-size: x-large;
-  display:inline-block;
 
-  margin-block: 10px;
+.info-name {
+  display: inline-block;
+  font-size: x-large;
+  position: absolute;
+  top: 0;
+  margin-left: 5px;
 }
-p {
-  display:inline-block;
+
+.info-name #real {
+  display: inline-block;
+  font-size: small;
+  margin-left: 5px;
+  color: gray;
+  top: 10px;
+  color: darkgray;
 }
-img {
+
+#small-info-ages,
+#small-info-dot {
+  display: inline-block;
+  font-size: small;
+  margin-left: 5px;
+  color: gray;
+}
+
+#small-info-country {
+  display: inline-block;
+  font-size: small;
+  margin-left: 5px;
+  color: #dd431f;
+}
+
+#youtube,
+#github,
+#facebook,
+#steam,
+#discord {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: white;
+  margin-right: 4px;
+  width: 50%
+}
+
+
+#social {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 5px;
+}
+
+#avatar {
   pointer-events: none;
   user-select: none;
   -webkit-user-drag: none;
@@ -45,30 +95,14 @@ img {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-}
-#avatar {
-  margin-right: 10px;
   width: 50px;
   height: 50px;
   border-radius: 100%;
   border-color: transparent;
 }
-#social[p]:link {
-  color: white;
-  text-decoration: none;
-}
-#social[p]:visited {
-  color: white;
-}
-#social[p]:hover {
-  color: white;
-  text-decoration: none;
-}
-#social[p]:active {
-  color: white;
-  text-decoration: none;
-}
-::-moz-selection,::selection {
-  color: white;
+
+::-moz-selection,
+::selection {
+  color: green;
   background: transparent;
 }
