@@ -8,6 +8,103 @@
   <link href="/css/style.css" rel="stylesheet">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3074036642049872"
     crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+  <style>
+    #box {
+      color: white;
+      border-style: solid;
+      border-radius: 10px;
+      position: fixed;
+      inset: 0px;
+      width: 50%;
+      height: 50%;
+      max-width: 100vw;
+      max-height: 100dvh;
+      margin: auto;
+    }
+
+    #box-inner {
+      border: 8px;
+      border-color: transparent;
+      height: 96%;
+      padding: 10px;
+      flex-direction: column;
+      position: relative;
+    }
+
+    #info-header {
+      max-width: 1000px;
+      position: relative;
+    }
+
+    .info-name {
+      display: inline-block;
+      font-size: x-large;
+      position: absolute;
+      top: 0;
+      margin-left: 5px;
+    }
+
+    .info-name #real {
+      display: inline-block;
+      font-size: small;
+      margin-left: 5px;
+      color: gray;
+      top: 10px;
+      color: darkgray;
+    }
+
+    #small-info-ages,
+    #small-info-dot {
+      display: inline-block;
+      font-size: small;
+      margin-left: 5px;
+      color: gray;
+    }
+
+    #small-info-country {
+      display: inline-block;
+      font-size: small;
+      margin-left: 5px;
+      color: #dd431f;
+    }
+
+    #youtube,
+    #github,
+    #facebook,
+    #steam,
+    #discord {
+      border-style: solid;
+      border-radius: 10px;
+      border-color: white;
+      margin-right: 4px;
+      width: 50%
+    }
+
+
+    #social {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: 5px;
+    }
+
+    #avatar {
+      pointer-events: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      border-color: transparent;
+    }
+  </style>
 </head>
 
 <body>
@@ -89,6 +186,14 @@
     </div>
   </div>
 </body>
-<script src="/js/script.js"></script>
+<script>
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    alert("If you're visiting this website with a mobile device, it kinda terrible since i build this site all for desktop user\n"
+      + "It is recommended to switching to desktop mode.");
+  }
+  const age = new Date().getFullYear() - 2007;
+  const smallInfo = document.getElementById("small-info-ages")
+  smallInfo.innerText = `Ages: ${age}`
+</script>
 
 </html>
