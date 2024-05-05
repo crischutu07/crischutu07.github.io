@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 html {
-  background-color: rgba(0, 0, 0, 0.945);
   font-family: "JetBrains Mono", "monospace";
-  color: white;
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    color: white;
+    border-color: white;
+    background-color: #1c1c1c;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color: black;
+    border-color: black;
+    background-color: #e6e6e6;
+  }
+}
 
 ::-moz-selection,
 ::selection {

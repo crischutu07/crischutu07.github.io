@@ -11,7 +11,6 @@
   <script src="/js/script.js"></script>
   <style>
     #box {
-      color: white;
       border-style: solid;
       border-radius: 10px;
       position: fixed;
@@ -104,6 +103,18 @@
       border-radius: 100%;
       border-color: transparent;
     }
+
+    @media (prefers-color-scheme: dark) {
+      #facebook-prefercolor {
+        color: lightblue
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      #facebook-prefercolor {
+        color: darkblue
+      }
+    }
   </style>
 </head>
 
@@ -181,7 +192,8 @@
       <p>Hello! I'm crischutu07! You can call me "cris" for short!</p>
       <p>And i'm absolutely terrible at making these (html and css with js stuff :3). Currently i learned <u>JavaScript
           (nodejs mostly)</u> <u>Bash</u> and <u>PHP (for modding)</u></p>
-      <p>Feel free to contact me on: <a style="color: lightcyan" href="https://facebook.com/crischutu07owo">Facebook</a>
+      <p>Feel free to contact me on: <a id="facebook-prefercolor"
+          href="https://facebook.com/crischutu07owo">Facebook</a>
         :)</p>
     </div>
   </div>
