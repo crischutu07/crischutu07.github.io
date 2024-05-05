@@ -9,5 +9,6 @@ body {
 }
 
 #error {
+  margin: 10px;
   color: #ee4b2b;
 }

@@ -11,4 +11,29 @@ var msg = [
 ]
 const err = document.getElementById("error");
 var msgErr = msg[Math.floor(Math.random() * msg.length)]
-err.innerText = msgErr
+
+// Work!! ):<
+var i = 0;
+err.addEventListener("click", function() {
+  var clickMsg = [
+    "You clicked me.",
+    "Stop clicking me!!",
+    "I said stop it!! >:(",
+    "You're still clicking..",
+    "...",
+    "...",
+    "...",
+    "Oh my goodness, can you not clicking at me!?",
+    "Stop!!",
+    "You're done."
+  ]
+  if (i >= clickMsg.length) {
+    window.open("https://youtu.be/dQw4w9WgXcQ");
+    location.assign("/")
+    return
+  }
+  err.innerText = clickMsg[i];
+  i = i + 1;
+});
+
+err.innerText = msgErr;
