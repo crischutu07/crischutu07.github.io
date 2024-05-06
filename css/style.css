@@ -10,18 +10,24 @@ html {
     border-color: white;
     background-color: #1c1c1c;
   }
+  a {
+    color: lightblue
+  }
 }
 
 @media (prefers-color-scheme: light) {
   html {
     color: black;
-    border-color: black;
+    border-color: #1c1c1c;
     background-color: #e6e6e6;
+  }
+  a {
+    color: darkblue
   }
 }
 
-::-moz-selection,
+/* ::-moz-selection,
 ::selection {
   color: green;
   background: transparent;
-}
+} */
