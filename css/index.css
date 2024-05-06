@@ -59,6 +59,7 @@ p {
   font-size: small;
 }
 
+
 #small-info #ages,
 #small-info #dot {
   display: inline-block;
@@ -121,4 +122,8 @@ p {
   font-size: fit-content;
   margin: 4px;
   overflow: hidden;
+}
+
+ul {
+  list-style-type: "=> ";
 }

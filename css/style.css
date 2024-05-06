@@ -7,11 +7,16 @@ html {
 @media (prefers-color-scheme: dark) {
   html {
     color: white;
-    border-color: white;
+    border-color: #fffdfa;
     background-color: #1c1c1c;
   }
+
   a {
-    color: lightblue
+    text-decoration: none;
+    color: greenyellow;
+    padding-bottom: 0.5px;
+    border-bottom: 1.4px solid #19c9ff;
+    ;
   }
 }
 
@@ -19,12 +24,17 @@ html {
   html {
     color: black;
     border-color: #1c1c1c;
-    background-color: #e6e6e6;
+    background-color: #fffdfa;
   }
+
   a {
-    color: darkblue
+    text-decoration: none;
+    color: greenyellow;
+    padding-bottom: 0.5px;
+    border-bottom: 1.4px solid #19c9ff;
   }
 }
+
 
 /* ::-moz-selection,
 ::selection {
