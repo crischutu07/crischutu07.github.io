@@ -30,4 +30,5 @@ var getRelativeTime = (d1, d2 = new Date()) => {
 }
 
 ages.innerText = `${date.getFullYear() - birthday.getFullYear()} years old`
+// put this later
 var relative = getRelativeTime(newBirthday)
