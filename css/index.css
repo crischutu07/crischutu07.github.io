@@ -14,10 +14,12 @@
   padding: 10px;
   margin: auto;
 }
+
 p {
   margin: 0;
   margin-bottom: 10px;
 }
+
 #info-header {
   font-size: 12px;
   margin: 4px;
@@ -31,9 +33,11 @@ p {
   position: absolute;
   top: 0;
 }
+
 .info-name #name {
   display: inline-block;
 }
+
 .info-name #real {
   display: inline-block;
   font-size: 14px;
@@ -48,11 +52,13 @@ p {
   -o-user-select: none;
   user-select: none;
 }
+
 #small-info {
   display: inline-block;
-  font-size:medium;
+  font-size: medium;
   font-size: small;
 }
+
 #small-info #ages,
 #small-info #dot {
   display: inline-block;
@@ -76,6 +82,7 @@ p {
   width: 50px;
   height: 50px;
 }
+
 #youtube:hover,
 #github:hover,
 #facebook:hover,
@@ -83,8 +90,9 @@ p {
 #steam:hover {
   background-color: gray;
 }
+
 #social {
-  padding:10px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   position: absolute;
