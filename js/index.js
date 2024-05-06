@@ -5,3 +5,4 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 const age = new Date().getFullYear() - 2007;
 const smallInfo = document.getElementById("small-info-ages")
 smallInfo.innerText = `Ages: ${age}`
+// umm
