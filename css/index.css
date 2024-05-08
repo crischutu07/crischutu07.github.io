@@ -89,7 +89,7 @@ p {
 #facebook:hover,
 #discord:hover,
 #steam:hover {
-  background-color: gray;
+  background-color: darkgray;
 }
 
 #social {
@@ -127,4 +127,3 @@ p {
 ul {
   list-style-type: "=> ";
 }
- 
