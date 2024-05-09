@@ -5,28 +5,33 @@ html {
 }
 
 @media (prefers-color-scheme: dark) {
+
+  /* Background and color font */
   html {
     color: white;
-    border-color: #fffdfa;
-    background-color: #1c1c1c;
+    border-color: #eeeeee;
+    background-color: #222831;
   }
 
+  /* Hyperlink */
   a {
     text-decoration: none;
     color: greenyellow;
     padding-bottom: 0.5px;
     border-bottom: 1.4px solid #19c9ff;
-    ;
   }
 }
 
 @media (prefers-color-scheme: light) {
+
+  /* Background and color font */
   html {
     color: black;
-    border-color: #1c1c1c;
-    background-color: #fffdfa;
+    border-color: #222831;
+    background-color: #eeeeee;
   }
 
+  /* Hyperlink */
   a {
     text-decoration: none;
     color: greenyellow;
@@ -41,4 +46,3 @@ html {
   color: green;
   background: transparent;
 } */
- 
