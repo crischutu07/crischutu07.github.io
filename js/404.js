@@ -9,7 +9,7 @@ var msg = [
   "Github Page leads you to here is funny, haha.",
   "Can't find anything, go back fool. :3",
 ]
-const err = document.getElementById("error");
+const err = document.getElementsByClassName("error");
 var msgErr = msg[Math.floor(Math.random() * msg.length)]
 
 // Work!! ):<
