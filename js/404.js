@@ -9,6 +9,7 @@ var msg = [
   "Github Page leads you to here is funny, haha.",
   "Can't find anything, go back fool. :3",
 ]
+// patch
 const err = document.getElementById("error");
 var msgErr = msg[Math.floor(Math.random() * msg.length)]
 
@@ -37,3 +38,4 @@ err.addEventListener("click", function() {
 });
 
 err.innerText = msgErr;
+

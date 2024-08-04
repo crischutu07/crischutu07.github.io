@@ -20,7 +20,6 @@ img {
 }
 
 @media (prefers-color-scheme: dark) {
-
   /* Background and color font */
   html {
     color: white;
@@ -32,10 +31,17 @@ img {
   a {
     text-decoration: none;
     color: greenyellow;
-    padding-bottom: 0.5px;
-    border-bottom: 1.4px solid #19c9ff;
+    padding-bottom: 1px;
+    border-bottom: 1px solid;
+    border-bottom-color: #19c9ff;
   }
-}
+  /* Hyperlink Hover */
+  a:hover {
+    border-bottom-color: cyan;
+    -webkit-transition: border-bottom-color 250ms linear;
+    -ms-transition: border-bottom-color 250ms linear;
+    transition: border-bottom-color 300ms linear;
+  }}
 
 @media (prefers-color-scheme: light) {
 
@@ -43,21 +49,43 @@ img {
   html {
     color: black;
     border-color: #222831;
-    background-color: #eeeeee;
+    background-color: #F2EFE5;
   }
 
   /* Hyperlink */
   a {
     text-decoration: none;
+<<<<<<< HEAD
     color: darkseagreen;
     padding-bottom: 0.5px;
     border-bottom: 1.4px solid #19c9ff;
+=======
+    color: greenyellow;
+    padding-bottom: 1px;
+    border-bottom: 1px solid;
+    border-bottom-color: #19c9ff;
+  }
+  /* Hyperlink Hover */
+  a:hover {
+    border-bottom-color: blue;
+    -webkit-transition: border-bottom-color 250ms linear;
+    -ms-transition: border-bottom-color 250ms linear;
+    transition: border-bottom-color 300ms linear;
+>>>>>>> 622cff0a803f198c3f4cd8fe47cc073da87d0603
   }
 }
 
+ul {
+  list-style-type: "=> ";
+}
+li::marker {
+  color: lightsteelblue;
+}
+.disableSelect {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
 
-/* ::-moz-selection,
-::selection {
-  color: green;
-  background: transparent;
-} */
