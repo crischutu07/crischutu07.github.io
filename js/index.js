@@ -3,7 +3,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   a.innerText = "Anyways hope there's not any problem after i fixed everything for mobile.. :) (plot twist: desktop users can't see this)"
 }
 const date = new Date()
-const birthday = new Date(`May 21 2007`);
+const birthday = new Date(`May 21 2010`);
 const newBirthday = new Date(`${date.getFullYear()}/${birthday.getMonth()}/${birthday.getDay()}`);
 const ages = document.getElementById("ages")
 // while(true){
