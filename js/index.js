@@ -6,11 +6,7 @@ const date = new Date()
 const birthday = new Date(`May 21 2010`);
 const newBirthday = new Date(`${date.getFullYear()}/${birthday.getMonth()}/${birthday.getDay()}`);
 const ages = document.getElementById("ages")
-// while(true){
-//   setInterval(function() {
-//     ages.innerText = `Ages: ${birthday} (${birthday.getFullYear()-date.getFullYear()})`
-//   }, 1000)
-// }
+
 var units = {
   year: 24 * 60 * 60 * 1000 * 365,
   month: 24 * 60 * 60 * 1000 * 365 / 12,
