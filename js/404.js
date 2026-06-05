@@ -9,28 +9,27 @@ var msg = [
   "Github Page leads you to here is funny, haha.",
   "Can't find anything, go back fool. :3",
 ]
+var clickMsg = [
+  "You clicked me.",
+  "Stop clicking me!!",
+  "I said stop it!! >:(",
+  "You're still clicking..",
+  "...",
+  "...",
+  "...",
+  "Oh my goodness, can you not clicking at me!?",
+  "Stop!!",
+  "You're done."
+]
 // patch
 const err = document.getElementById("error");
 var msgErr = msg[Math.floor(Math.random() * msg.length)]
 
-// Work!! ):<
 var i = 0;
 err.addEventListener("click", function() {
-  var clickMsg = [
-    "You clicked me.",
-    "Stop clicking me!!",
-    "I said stop it!! >:(",
-    "You're still clicking..",
-    "...",
-    "...",
-    "...",
-    "Oh my goodness, can you not clicking at me!?",
-    "Stop!!",
-    "You're done."
-  ]
   if (i >= clickMsg.length) {
-    window.open("https://youtu.be/dQw4w9WgXcQ");
-    location.assign("/")
+    window.open("");
+    location.assign("https://google.com")
     return
   }
   err.innerText = clickMsg[i];
@@ -38,4 +37,3 @@ err.addEventListener("click", function() {
 });
 
 err.innerText = msgErr;
-

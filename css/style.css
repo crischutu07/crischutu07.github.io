@@ -1,5 +1,4 @@
-/* my own css for some of my html */
-
+/* global css file to fit every html files */
 /*
  * Add JetBrains Monospace Font
  */
@@ -10,69 +9,51 @@ html {
 }
 
 img {
-  /* IMPORTANT: 
+  /* IMPORTANT:
    * Make image stays the same as browser's size
-   * While it stays the same res 
+   * While it stays the same res
    */
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
 
-@media (prefers-color-scheme: dark) {
+a {
+  /* remove that inline of a hyperlink */
+  text-decoration: none;
+}
 
+/* handles color based on devices */
+@media (prefers-color-scheme: dark) {
   /* Background and color font */
   html {
     color: white;
-    border-color: #eeeeee;
     background-color: #222831;
   }
 
-  /* Hyperlink */
   a {
-    text-decoration: none;
-    color: greenyellow;
-    padding-bottom: 1px;
-    border-bottom: 1px solid;
-    border-bottom-color: #19c9ff;
+    color: #b2ffff;
   }
-
-  /* Hyperlink Hover */
   a:hover {
-    border-bottom-color: cyan;
-    -webkit-transition: border-bottom-color 250ms linear;
-    -ms-transition: border-bottom-color 250ms linear;
-    transition: border-bottom-color 300ms linear;
+    color: #b2ffff;
   }
 }
-
 @media (prefers-color-scheme: light) {
 
   /* Background and color font */
   html {
-    color: black;
-    border-color: #222831;
-    background-color: #F2EFE5;
+    color: #4e545c;
+    background-color: #CDD3DC;
   }
 
   /* Hyperlink */
   a {
-    text-decoration: none;
-    color: darkseagreen;
-    padding-bottom: 0.5px;
-    border-bottom: 1.4px solid #19c9ff;
-    color: greenyellow;
-    padding-bottom: 1px;
-    border-bottom: 1px solid;
-    border-bottom-color: #19c9ff;
+    color: #b2ffff;
   }
 
-  /* Hyperlink Hover */
+  /* hyperlink hover */
   a:hover {
-    border-bottom-color: blue;
-    -webkit-transition: border-bottom-color 250ms linear;
-    -ms-transition: border-bottom-color 250ms linear;
-    transition: border-bottom-color 300ms linear;
+    color: #d8ffff;
   }
 }
 
