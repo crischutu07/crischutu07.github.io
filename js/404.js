@@ -6,8 +6,7 @@ var msg = [
   "What's up? What are you finding?",
   "Mistakes again... Probably.",
   "Jeez, i think you're typing the url too fast!?",
-  "Github Page leads you to here is funny, haha.",
-  "Can't find anything, go back fool. :3",
+  "Can't find anything, go back u foo!! >:3",
 ]
 var clickMsg = [
   "You clicked me.",
@@ -19,7 +18,6 @@ var clickMsg = [
   "...",
   "Oh my goodness, can you not clicking at me!?",
   "Stop!!",
-  "You're done."
 ]
 // patch
 const err = document.getElementById("error");
@@ -28,8 +26,7 @@ var msgErr = msg[Math.floor(Math.random() * msg.length)]
 var i = 0;
 err.addEventListener("click", function() {
   if (i >= clickMsg.length) {
-    window.open("");
-    location.assign("https://google.com")
+    window.location.href = '/'
     return
   }
   err.innerText = clickMsg[i];
